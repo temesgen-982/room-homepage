@@ -1,0 +1,62 @@
+@use "../abstracts/breakpoints" as breakpoints;
+
+.grid {
+  display: grid;
+}
+.grid-row {
+  grid-auto-flow: column;
+}
+.grid-center-vertical {
+  align-items: center;
+}
+
+.grid-justify-right {
+  justify-content: end;
+}
+
+.grid-center {
+  place-items: center;
+}
+
+.grid-gap-1 {
+  gap: 1em;
+}
+
+.grid-gap-2 {
+  gap: 2em;
+}
+
+.grid-item-center {
+  justify-self: center;
+}
+
+.grid-item-left {
+  justify-self: start;
+}
+
+@include breakpoints.media(medium) {
+  .grid-lg-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .grid-lg-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-lg-row {
+    display: grid;
+    grid-auto-flow: column;
+  }
+  .grid-item-left {
+    justify-self: start;
+  }
+  .grid-item-right {
+    justify-self: end;
+  }
+  .grid-span-3 {
+    grid-column: span 3;
+  }
+  .grid-span-2 {
+    grid-column: span 2;
+  }
+}

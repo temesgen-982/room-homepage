@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Room homepage</title>
+
+    <link rel="stylesheet" href="dist/styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="hero grid">
+        <header class="header flex flex-center p-20">
+          <button class="nav-toggle">
+            <img src="assets/images/icon-hamburger.svg" alt="open menu" />
+          </button>
+          <div
+            class="header__icon flex flex-center flex-item-center-horizontal"
+          >
+            <img src="assets/images/logo.svg" alt="company logo" />
+          </div>
+        </header>
+        <nav class="nav grid grid-justify-right p-20 bg-white is-hidden">
+          <ul class="flex flex-gap-1">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="nav-overlay is-hidden"></div>
+        <div class="carousel">
+          <div class="carousel-track carousel-image">
+            <picture class="carousel-slide">
+              <source
+                media="(min-width: 375px)"
+                srcset="assets/images/desktop-image-hero-1.jpg"
+              />
+              <img
+                src="assets/images/mobile-image-hero-1.jpg"
+                alt="hero image"
+              />
+            </picture>
+            <picture class="carousel-slide">
+              <source
+                media="(min-width: 375px)"
+                srcset="assets/images/desktop-image-hero-2.jpg"
+              />
+              <img
+                src="assets/images/mobile-image-hero-2.jpg"
+                alt="hero image"
+              />
+            </picture>
+            <picture class="carousel-slide">
+              <source
+                media="(min-width: 375px)"
+                srcset="assets/images/desktop-image-hero-3.jpg"
+              />
+              <img
+                src="assets/images/mobile-image-hero-3.jpg"
+                alt="hero image"
+              />
+            </picture>
+          </div>
+        </div>
+        <div class="carousel-buttons p-0 grid grid-row">
+          <button class="carousel-left bg-black p-block-10 p-inline-20">
+            <img src="assets/images/icon-angle-left.svg" alt="" />
+          </button>
+          <button class="carousel-right bg-black p-block-10 p-inline-20">
+            <img src="assets/images/icon-angle-right.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="carousel">
+        <div class="carousel-track carousel-text">
+          <div class="grid grid-gap-1 carousel-slide p-block-50 p-inline-20">
+            <h1>Discover innovative ways to decorate</h1>
+            <p class="txt-line-1">
+              We provide unmatched quality, comfort, and style for property
+              owners across the country. Our experts combine form and function
+              in bringing your vision to life. Create a room in your own style
+              with our collection and make your property a reflection of you and
+              what you love.
+            </p>
+            <button
+              class="flex flex-gap-2 grid-item-left width-100 txt-spacing-5 txt-uppercase p-0"
+            >
+              <p>Shop now</p>
+              <img
+                class="width-15"
+                src="assets/images/icon-arrow.svg"
+                alt="shop now"
+              />
+            </button>
+          </div>
+          <div class="grid grid-gap-1 carousel-slide p-block-50 p-inline-20">
+            <h1>We are available all across the globe</h1>
+            <p class="txt-line-1">
+              With stores all over the world, it's easy for you to find
+              furniture for your home or place of business. Locally, we’re in
+              most major cities throughout the country. Find the branch nearest
+              you using our store locator. Any questions? Don't hesitate to
+              contact us today.
+            </p>
+            <button
+              class="flex flex-gap-2 grid-item-left width-100 txt-spacing-5 txt-uppercase p-0"
+            >
+              <p>Shop now</p>
+              <img
+                class="width-15"
+                src="assets/images/icon-arrow.svg"
+                alt="shop now"
+              />
+            </button>
+          </div>
+          <div class="grid grid-gap-1 carousel-slide p-block-50 p-inline-20">
+            <h1>Manufactured with the best materials</h1>
+            <p class="txt-line-1">
+              Our modern furniture store provide a high level of quality. Our
+              company has invested in advanced technology to ensure that every
+              product is made as perfect and as consistent as possible. With
+              three decades of experience in this industry, we understand what
+              customers want for their home and office.
+            </p>
+            <button
+              class="flex flex-gap-2 grid-item-left width-100 txt-spacing-5 txt-uppercase p-0"
+            >
+              <p>Shop now</p>
+              <img
+                class="width-15"
+                src="assets/images/icon-arrow.svg"
+                alt="shop now"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="carousel-buttons p-0 grid grid-row is-hidden">
+          <button class="carousel-left bg-black p-block-10 p-inline-20">
+            <img src="assets/images/icon-angle-left.svg" alt="" />
+          </button>
+          <button class="carousel-right bg-black p-block-10 p-inline-20">
+            <img src="assets/images/icon-angle-right.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="image-container">
+        <img
+          class="width-100"
+          src="assets/images/image-about-dark.jpg"
+          alt=""
+        />
+      </div>
+      <div class="about grid grid-gap-1 p-block-50 p-inline-20">
+        <h2 class="txt-uppercase txt-spacing-2">About our furniture</h2>
+        <p class="txt-line-1">
+          Our multifunctional collection blends design and function to suit your
+          individual taste. Make each room unique, or pick a cohesive theme that
+          best express your interests and what inspires you. Find the furniture
+          pieces you need, from traditional to contemporary styles or anything
+          in between. Product specialists are available to help you create your
+          dream space.
+        </p>
+      </div>
+      <div class="image-container">
+        <img
+          class="width-100"
+          src="assets/images/image-about-light.jpg"
+          alt="hero image"
+        />
+      </div>
+    </main>
+    <script src="assets/javascript/menu.js"></script>
+    <script src="assets/javascript/carousel.js"></script>
+  </body>
+</html>

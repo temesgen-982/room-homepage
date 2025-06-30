@@ -1,0 +1,48 @@
+@use "../abstracts/functions" as functions;
+@use "../abstracts/breakpoints" as breakpoints;
+
+.p-15 {
+  padding: functions.rem(15);
+}
+.p-20 {
+  padding: functions.rem(20);
+}
+.p-0 {
+  padding: 0;
+}
+.p-block-50 {
+  padding-block: functions.rem(50);
+}
+.p-block-10 {
+  padding-block: functions.rem(10);
+}
+.p-inline-35 {
+  padding-inline: functions.rem(35);
+}
+.p-inline-20 {
+  padding-inline: functions.rem(20);
+}
+.m-20 {
+  margin: functions.rem(20);
+}
+
+@include breakpoints.media(medium) {
+  .p-inline-lg-10 {
+    padding-inline: functions.rem(20);
+  }
+  .p-lg-none {
+    padding: 0;
+  }
+  .p-lg-35 {
+    padding: functions.rem(35);
+  }
+  .m-md-top {
+    margin-top: 30%;
+  }
+  .m-md-right {
+    margin-right: -30%;
+  }
+  .m-lg-none {
+    margin: 0;
+  }
+}
