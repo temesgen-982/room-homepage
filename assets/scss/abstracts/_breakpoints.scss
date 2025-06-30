@@ -2,8 +2,8 @@
 @use "sass:map";
 // 600px, 900px, 1440px
 $breakpoints-up: (
-  "medium": functions.em(375),
-  "large": functions.em(800),
+  "medium": functions.em(500),
+  "large": functions.em(980),
   "xlarge": functions.em(1440),
 );
 

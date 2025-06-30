@@ -1,3 +1,5 @@
+@use "../abstracts/breakpoints" as breakpoints;
+
 .hero {
   position: relative;
   .header {
@@ -6,6 +8,9 @@
     right: 0;
     .nav-toggle {
       z-index: 1000;
+      @include breakpoints.media(medium) {
+        display: none;
+      }
     }
     .header__icon {
       z-index: 998;
@@ -16,6 +21,11 @@
     left: 0;
     right: 0;
     z-index: 999;
+    @include breakpoints.media(medium) {
+      display: grid;
+      background-color: transparent;
+      left: auto;
+    }
   }
   .nav-overlay {
     position: fixed;

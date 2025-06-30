@@ -1,3 +1,5 @@
+@use "../abstracts/breakpoints" as breakpoints;
+
 .txt-spacing-5 {
   letter-spacing: 0.5rem;
 }
@@ -9,4 +11,10 @@
 }
 .txt-uppercase {
   text-transform: uppercase;
+}
+
+@include breakpoints.media(small) {
+  .txt-lg-white {
+    color: var(--clr-white);
+  }
 }

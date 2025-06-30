@@ -18,6 +18,11 @@
   place-items: center;
 }
 
+.grid-align-center {
+  align-items: center;
+  align-content: center;
+}
+
 .grid-gap-1 {
   gap: 1em;
 }
@@ -34,14 +39,14 @@
   justify-self: start;
 }
 
-@include breakpoints.media(medium) {
+@include breakpoints.media(large) {
   .grid-lg-4 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
-  .grid-lg-2 {
+  .grid-lg-12 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(12, 1fr);
   }
   .grid-lg-row {
     display: grid;
@@ -53,10 +58,19 @@
   .grid-item-right {
     justify-self: end;
   }
-  .grid-span-3 {
-    grid-column: span 3;
+  .grid-lg-span-7 {
+    grid-column: span 7;
   }
-  .grid-span-2 {
-    grid-column: span 2;
+  .grid-lg-span-5 {
+    grid-column: span 5;
+  }
+  .grid-lg-span-4 {
+    grid-column: span 4;
+  }
+}
+
+@include breakpoints.media(medium) {
+  .grid-md-justify-left {
+    justify-content: start;
   }
 }

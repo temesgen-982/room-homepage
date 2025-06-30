@@ -17,27 +17,29 @@
     <link rel="stylesheet" href="dist/styles.css" />
   </head>
   <body>
-    <main>
-      <div class="hero grid">
-        <header class="header flex flex-center p-20">
+    <main class="grid-lg-12 height-lg-100vh">
+      <div class="hero grid grid-lg-span-7">
+        <header class="header grid grid-row p-20">
           <button class="nav-toggle">
             <img src="assets/images/icon-hamburger.svg" alt="open menu" />
           </button>
-          <div
-            class="header__icon flex flex-center flex-item-center-horizontal"
-          >
+          <div class="header__icon">
             <img src="assets/images/logo.svg" alt="company logo" />
           </div>
+
+          <nav
+            class="nav grid grid-justify-right grid-md-justify-left p-20 bg-lg-transparent bg-white is-hidden"
+          >
+            <ul class="flex flex-gap-1">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="nav-overlay is-hidden"></div>
         </header>
-        <nav class="nav grid grid-justify-right p-20 bg-white is-hidden">
-          <ul class="flex flex-gap-1">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="nav-overlay is-hidden"></div>
         <div class="carousel">
           <div class="carousel-track carousel-image">
             <picture class="carousel-slide">
@@ -72,7 +74,7 @@
             </picture>
           </div>
         </div>
-        <div class="carousel-buttons p-0 grid grid-row">
+        <div class="carousel-buttons carousel-sm-buttons p-0 grid grid-row">
           <button class="carousel-left bg-black p-block-10 p-inline-20">
             <img src="assets/images/icon-angle-left.svg" alt="" />
           </button>
@@ -81,9 +83,11 @@
           </button>
         </div>
       </div>
-      <div class="carousel">
-        <div class="carousel-track carousel-text">
-          <div class="grid grid-gap-1 carousel-slide p-block-50 p-inline-20">
+      <div class="carousel grid-lg-span-5">
+        <div class="carousel-track carousel-text height-100">
+          <div
+            class="grid grid-align-center height-100 grid-gap-1 carousel-slide p-block-50 p-inline-20"
+          >
             <h1>Discover innovative ways to decorate</h1>
             <p class="txt-line-1">
               We provide unmatched quality, comfort, and style for property
@@ -144,7 +148,9 @@
             </button>
           </div>
         </div>
-        <div class="carousel-buttons p-0 grid grid-row is-hidden">
+        <div
+          class="carousel-buttons carousel-lg-buttons p-0 grid grid-row is-hidden"
+        >
           <button class="carousel-left bg-black p-block-10 p-inline-20">
             <img src="assets/images/icon-angle-left.svg" alt="" />
           </button>
@@ -153,14 +159,16 @@
           </button>
         </div>
       </div>
-      <div class="image-container">
+      <div class="image-container grid-lg-span-4">
         <img
           class="width-100"
           src="assets/images/image-about-dark.jpg"
           alt=""
         />
       </div>
-      <div class="about grid grid-gap-1 p-block-50 p-inline-20">
+      <div
+        class="about grid grid-gap-1 grid-align-center grid-lg-span-4 p-block-50 p-inline-20"
+      >
         <h2 class="txt-uppercase txt-spacing-2">About our furniture</h2>
         <p class="txt-line-1">
           Our multifunctional collection blends design and function to suit your
@@ -171,7 +179,7 @@
           dream space.
         </p>
       </div>
-      <div class="image-container">
+      <div class="image-container grid-lg-span-4">
         <img
           class="width-100"
           src="assets/images/image-about-light.jpg"

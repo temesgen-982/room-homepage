@@ -1,3 +1,7 @@
+/* this is style for both carousels (image and text) */
+
+@use "../abstracts/breakpoints" as breakpoints;
+
 .carousel {
   position: relative;
   overflow: hidden;
@@ -19,4 +23,16 @@
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+@include breakpoints.media(large) {
+  .carousel-lg-buttons {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .carousel-sm-buttons {
+    display: none;
+  }
 }

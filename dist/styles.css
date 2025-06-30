@@ -127,59 +127,6 @@ a {
   text-decoration: none;
 }
 
-.hero {
-  position: relative;
-}
-.hero .header {
-  position: absolute;
-  left: 0;
-  right: 0;
-}
-.hero .header .nav-toggle {
-  z-index: 1000;
-}
-.hero .header .header__icon {
-  z-index: 998;
-}
-.hero .nav {
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: 999;
-}
-.hero .nav-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 998;
-}
-
-.carousel {
-  position: relative;
-  overflow: hidden;
-}
-.carousel .carousel-track {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-.carousel .carousel-track .carousel-slide {
-  width: 100%;
-  flex-shrink: 0;
-}
-.carousel .carousel-track .carousel-slide .slide-img {
-  width: 100%;
-  height: auto;
-}
-
-.carousel-buttons {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
 .flex {
   display: flex;
 }
@@ -209,9 +156,12 @@ a {
   margin: 0 auto;
 }
 
-@media (min-width: 23.4375rem) {
+@media (min-width: 31.25rem) {
   .flex-item-lg-right {
     margin-left: auto;
+  }
+  .flex-item-lg-left {
+    margin-right: auto;
   }
   .flex-lg {
     display: flex;
@@ -237,6 +187,11 @@ a {
   place-items: center;
 }
 
+.grid-align-center {
+  align-items: center;
+  align-content: center;
+}
+
 .grid-gap-1 {
   gap: 1em;
 }
@@ -253,14 +208,14 @@ a {
   justify-self: start;
 }
 
-@media (min-width: 23.4375rem) {
+@media (min-width: 61.25rem) {
   .grid-lg-4 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
-  .grid-lg-2 {
+  .grid-lg-12 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(12, 1fr);
   }
   .grid-lg-row {
     display: grid;
@@ -272,11 +227,19 @@ a {
   .grid-item-right {
     justify-self: end;
   }
-  .grid-span-3 {
-    grid-column: span 3;
+  .grid-lg-span-7 {
+    grid-column: span 7;
   }
-  .grid-span-2 {
-    grid-column: span 2;
+  .grid-lg-span-5 {
+    grid-column: span 5;
+  }
+  .grid-lg-span-4 {
+    grid-column: span 4;
+  }
+}
+@media (min-width: 31.25rem) {
+  .grid-md-justify-left {
+    justify-content: start;
   }
 }
 .is-hidden {
@@ -315,11 +278,11 @@ a {
   margin: 1.25rem;
 }
 
-@media (min-width: 23.4375rem) {
+@media (min-width: 31.25rem) {
   .p-inline-lg-10 {
     padding-inline: 1.25rem;
   }
-  .p-lg-none {
+  .p-lg-0 {
     padding: 0;
   }
   .p-lg-35 {
@@ -355,6 +318,15 @@ a {
   width: 15%;
 }
 
+.height-100 {
+  height: 100%;
+}
+
+@media (min-width: 61.25rem) {
+  .height-lg-100vh {
+    height: 100vh;
+  }
+}
 .txt-spacing-5 {
   letter-spacing: 0.5rem;
 }
@@ -369,6 +341,89 @@ a {
 
 .txt-uppercase {
   text-transform: uppercase;
+}
+
+@media (min-width: ) {
+  .txt-lg-white {
+    color: var(--clr-white);
+  }
+}
+.hero {
+  position: relative;
+}
+.hero .header {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.hero .header .nav-toggle {
+  z-index: 1000;
+}
+@media (min-width: 31.25rem) {
+  .hero .header .nav-toggle {
+    display: none;
+  }
+}
+.hero .header .header__icon {
+  z-index: 998;
+}
+.hero .nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+@media (min-width: 31.25rem) {
+  .hero .nav {
+    display: grid;
+    background-color: transparent;
+    left: auto;
+  }
+}
+.hero .nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+/* this is style for both carousels (image and text) */
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+.carousel .carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel .carousel-track .carousel-slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+.carousel .carousel-track .carousel-slide .slide-img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media (min-width: 61.25rem) {
+  .carousel-lg-buttons {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  .carousel-sm-buttons {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
