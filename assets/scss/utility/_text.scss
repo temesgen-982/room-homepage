@@ -1,5 +1,8 @@
 @use "../abstracts/breakpoints" as breakpoints;
 
+.txt-ff-league-spartan {
+  font-family: var(--ff-base);
+}
 .txt-spacing-5 {
   letter-spacing: 0.5rem;
 }
